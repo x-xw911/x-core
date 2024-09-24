@@ -47,8 +47,10 @@
 
 
 
-/* Overflow and text truncation */
 /* 溢出和文本截断 */
+/* ----------------------------------- 1行 overflow-hidden truncate ----------------------------------- */
+/* ----------------------------------- 2行 overflow-hidden truncate-line truncate-2 ----------------------------------- */
+/* ----------------------------------- 3行 overflow-hidden truncate-line truncate-3 ----------------------------------- */
 .overflow-hidden { overflow: hidden; }
 .truncate { text-overflow: ellipsis; white-space: nowrap; }
 .break-word { word-break: break-word; }
@@ -56,7 +58,6 @@
 .truncate-line {
   max-width: 100%;
   word-break: break-all;
-  overflow: hidden;
   display: -webkit-box;
   -webkit-box-orient: vertical;
 }
